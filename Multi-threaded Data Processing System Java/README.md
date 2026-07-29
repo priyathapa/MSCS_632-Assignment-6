@@ -25,13 +25,13 @@ This project implements a multi-threaded Data Processing System in Java that dem
 - Exception Handling (`try-catch-finally`)
 
 ## Project Structure
-JavaDataProcessingSystem/
-├── Main.java
-├── Task.java
-├── Worker.java
-├── SharedTaskQueue.java
-├── ResultManager.java
-└── EmptyQueueException.java
+  JavaDataProcessingSystem/
+  ├── Main.java
+  ├── Task.java
+  ├── Worker.java
+  ├── SharedTaskQueue.java
+  ├── ResultManager.java
+  └── EmptyQueueException.java
 
 
 ## How to Run
