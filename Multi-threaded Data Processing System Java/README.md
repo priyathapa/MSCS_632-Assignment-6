@@ -39,6 +39,8 @@ This project implements a multi-threaded Data Processing System in Java that dem
 
 ```bash
 javac *.java
-
+```
 2. Run the application
+```bash
 java Main
+```
