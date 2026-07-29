@@ -1,43 +1,42 @@
-# Data Processing System – Java & Go
+# Multi-threaded Data Processing System
 
 ## Overview
 
-This repository contains a concurrent Data Processing System implemented in both **Java** and **Go**. The project demonstrates how each language handles concurrency, synchronization, exception/error handling, and shared resource management while processing tasks in parallel.
-
-## Project Objectives
-
-The objective of this project is to:
-
-- Implement a multi-threaded data processing system in Java and Go.
-- Demonstrate safe concurrent task processing using each language's concurrency model.
-- Prevent race conditions and deadlocks when accessing shared resources.
-- Apply appropriate exception and error handling techniques.
-- Compare the concurrency approaches used by Java and Go.
+This repository contains a multi-threaded Data Processing System implemented in both **Java** and **Go**. The project demonstrates how each language manages concurrency, synchronization, shared resources, error handling, and worker termination.
 
 ## Repository Structure
 
 ```text
-DataProcessingSystem/
-├── Java/
-│   ├── Main.java
-│   ├── Task.java
-│   ├── Worker.java
-│   ├── SharedTaskQueue.java
-│   ├── ResultManager.java
-│   └── EmptyQueueException.java
-│
-├── Go/
-│   ├── main.go
-│   └── go.mod
-│
+Multi-threaded-Data-Processing-System/
+├── Multi-threaded Data Processing System Java/
+├── Multi-threaded Data Processing System Go/
 └── README.md
 ```
 
-## Technologies Used
+## Implementations
 
-- Java (ExecutorService, Runnable, ReentrantLock)
-- Go (Goroutines, Channels, WaitGroup, Mutex)
+### Java
 
-## Learning Outcomes
+The Java implementation uses:
 
-This project demonstrates the implementation of concurrent programming concepts in two different programming languages. It highlights the differences between Java's thread-based concurrency model and Go's goroutine and channel-based model while emphasizing thread safety, synchronization, and reliable error handling.
+- `ExecutorService`
+- `Runnable`
+- `ReentrantLock`
+- Shared task queues
+- Exception handling with `try-catch-finally`
+- File output and logging
+
+### Go
+
+The Go implementation uses:
+
+- Goroutines
+- Channels
+- `sync.WaitGroup`
+- `sync.Mutex`
+- Explicit error checking
+- Resource cleanup with `defer`
+
+## Purpose
+
+The purpose of this project is to compare Java’s thread-based shared-memory concurrency model with Go’s goroutine and channel-based concurrency model. Both implementations process tasks concurrently while preventing race conditions, duplicate processing, missed tasks, and unsafe access to shared resources.
