@@ -32,7 +32,6 @@ This project implements a multi-threaded Data Processing System in Java that dem
 - `SharedTaskQueue.java` – Provides a thread-safe shared task queue.
 - `ResultManager.java` – Stores processed results and writes them to a file.
 - `EmptyQueueException.java` – Custom exception thrown when the task queue is empty.
-```
 
 ## How to Run
 
