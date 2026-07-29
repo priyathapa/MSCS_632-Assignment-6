@@ -26,16 +26,13 @@ This project implements a multi-threaded Data Processing System in Java that dem
 
 ## Project Structure
 
-```text
-JavaDataProcessingSystem/
-├── Main.java
-├── Task.java
-├── Worker.java
-├── SharedTaskQueue.java
-├── ResultManager.java
-└── EmptyQueueException.java
+- `Main.java` – Starts the application and manages the worker threads.
+- `Task.java` – Represents an individual processing task.
+- `Worker.java` – Implements the worker thread logic.
+- `SharedTaskQueue.java` – Provides a thread-safe shared task queue.
+- `ResultManager.java` – Stores processed results and writes them to a file.
+- `EmptyQueueException.java` – Custom exception thrown when the task queue is empty.
 ```
-
 
 ## How to Run
 
